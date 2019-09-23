@@ -1,3 +1,4 @@
+//loop through and check the next index to see the length of the values
 function parseInt(string) {
   // TODO: it's your task now
   let numDictionary = {
@@ -20,7 +21,15 @@ function parseInt(string) {
     eighty: '8',
     ninety: '9'
   }
-  
+  // this will be used to add the big numbers for example One hundred-Thousand
+  let length = {
+    hundred: '100',
+    thousand: '1000',
+    tenThousand: '10000',
+    hundredThousand: '100000',
+    million: '1000000'
+  }
+
   let newString = string.replace(/-/g, ' ');
   newString = newString.split(' ');
 //     console.log('new number split by space', newString)
@@ -40,7 +49,7 @@ function parseInt(string) {
   return parseFloat(stringNumber);
 }
 
-console.log(parseInt('One million'))
+console.log(parseInt('One million four-hundred thousand'))
 
 
 //count till you get -1
